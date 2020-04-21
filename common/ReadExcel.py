@@ -5,7 +5,7 @@ from common.ReadConfig import ReadConfig
 class ReadExcel():
     def __init__(self):
         self.readConfig = ReadConfig()
-        self.table = xlrd.open_workbook('../testfile/二维码支付.xlsx')
+        self.table = xlrd.open_workbook('./testfile/二维码支付.xlsx')
         self.sheet = self.table.sheet_by_index(0)
 
     def get_rows(self):

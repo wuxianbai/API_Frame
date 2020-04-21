@@ -3,7 +3,7 @@ from configparser import ConfigParser
 class ReadConfig():
     def __init__(self, filename=None):
         if filename is None:
-            self.filename = '../config/qrCode.ini'
+            self.filename = './config/qrCode.ini'
 
     def read(self):
         self.cp = ConfigParser()
