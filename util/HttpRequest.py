@@ -18,7 +18,7 @@ class HttpRequest():
             response = requests.get(url, params=eval(data))
 
         if response.status_code != 200:
-            MyLog().log('debug', '请求失败，响应码为{}'.format(response.status_code))
+            MyLog().log('error', '请求失败，响应码为{}'.format(response.status_code))
             return False
         res = json.dumps(response.text, ensure_ascii=False)
 
